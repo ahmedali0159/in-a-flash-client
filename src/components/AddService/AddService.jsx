@@ -1,9 +1,9 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import './AddBlog.css'
+import './AddService.css'
 
-export default function AddBlog() {
+export default function AddService() {
   const {
     register,
     handleSubmit,
@@ -11,14 +11,14 @@ export default function AddBlog() {
   } = useForm();
   const [imageURL, setImageUrl] = useState(null)
 
-
   const onSubmit = (data) =>{
     const eventData = {
       name:data.title,
       imageURL: imageURL,
-      content: data.content
+      discription: data.discription,
+      price: data.price
     };
-     const url = (`http://localhost:3000/`);
+     const url = (`http://localhost:5000/addservice`);
      console.log(eventData);
      fetch(url, {
       method: 'POST',
@@ -47,7 +47,7 @@ export default function AddBlog() {
   }
   return (
     <div className="main">
-      <h1 className="text-center mb-5">Add Post</h1>
+      <h1 className="text-center mb-5">Add Service</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           className="form-control"
@@ -55,20 +55,27 @@ export default function AddBlog() {
           placeholder="Enter a Title"
           {...register("title")}
         />
+        <br/>
+        <input
+          className="form-control"
+          name="price"
+          placeholder="Enter a Price"
+          {...register("price")}
+        />
         <br />
         <textarea
           className="form-control"
           rows="3"
-          name="price"
-          placeholder="Enter a Content"
-          {...register("content")}
+          name="discription"
+          placeholder="Enter a Discription"
+          {...register("discription")}
         />
         <br />
         <input
           className="form-control"
           name="exampleRequired"
           type="file"
-          placeholder="Add Cover Image"
+          placeholder="Add Image"
           onChange={handleImageUpload}
         />
         {errors.exampleRequired && <span>This field is required</span>}

@@ -25,7 +25,7 @@ export default function Header() {
                 Home
               </NavLink>
               <NavLink
-                to="/blogs"
+                to="/services"
                 style={{ color: "#000" }}
                 activeClassName="active"
                 className="nav-links"

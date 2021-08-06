@@ -7,6 +7,9 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 export default function Footer() {
   return (
     <section>
+      <div className="text-center py-5">
+        <h1>Contact Us</h1>
+      </div>
     <footer>
       <div className="body">
         <div className="container">
@@ -19,22 +22,22 @@ export default function Footer() {
             </p>
             <ul className="social-icon">
               <li>
-                <a href="#">
+                <a href="facebookicon">
                   <FacebookIcon />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="linkedInIcon">
                   <LinkedInIcon />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="youtubeicon">
                   <YouTubeIcon />{" "}
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="instagram">
                   {" "}
                   <InstagramIcon />
                 </a>
@@ -45,16 +48,16 @@ export default function Footer() {
             <h2>Quick Links</h2>
             <ul>
               <li>
-                <a href="#">Blog</a>
+                <a href="blog">Blog</a>
               </li>
               <li>
-                <a href="#">Our Teams</a>
+                <a href="OurTeams">Our Teams</a>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <a href="contactUs">Contact Us</a>
               </li>
               <li>
-                <a href="#">Shop</a>
+                <a href="shop">Shop</a>
               </li>
             </ul>
           </div>
@@ -62,13 +65,13 @@ export default function Footer() {
             <h2>Company</h2>
             <ul>
               <li>
-                <a href="#">News</a>
+                <a href="news">News</a>
               </li>
               <li>
-                <a href="#">Shop</a>
+                <a href="shop">Shop</a>
               </li>
               <li>
-                <a href="#">License</a>
+                <a href="license">License</a>
               </li>
             </ul>
           </div>
@@ -83,15 +86,15 @@ export default function Footer() {
               </li>
               <li>
                 <p>
-                  <a href="tel:+01234567890">+880 0144480782</a>
+                  <a href="tel:+01234567890">+999 99 999</a>
                 </p>
                 <p>
-                  <a href="tel:+01234567890">+880 0144480782</a>
+                  <a href="tel:+01234567890">+999 99 9999</a>
                 </p>
               </li>
               <li>
                 <p>
-                  <a href="bishuddhofol@.com">Bishuddhofol@gmail.com</a>
+                  <a href="inaflash@.com">inaflash@.com</a>
                 </p>
               </li>
             </ul>
