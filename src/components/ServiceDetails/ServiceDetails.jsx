@@ -8,7 +8,7 @@ export default function ServiceDetails() {
   const [services, setServices] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/service/${_id}`)
+    fetch(`https://fierce-tundra-16909.herokuapp.com/service/${_id}`)
       .then((res) => res.json())
       .then((data) => setServices(data[0]));
   }, [_id]);

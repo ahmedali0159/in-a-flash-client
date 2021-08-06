@@ -7,7 +7,7 @@ export default function Services() {
 
     
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://fierce-tundra-16909.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setService(data))
     }, [])

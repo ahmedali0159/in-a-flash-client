@@ -18,7 +18,7 @@ export default function AddService() {
       discription: data.discription,
       price: data.price
     };
-     const url = (`http://localhost:5000/addservice`);
+     const url = (`https://fierce-tundra-16909.herokuapp.com/addservice`);
      console.log(eventData);
      fetch(url, {
       method: 'POST',
